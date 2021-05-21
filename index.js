@@ -5,6 +5,7 @@ $(document).ready(function()
         url: "getReviews.php?getWhat=allReviews",
         success: function(response)
         {
+            console.log(response);
             let responseJSON = JSON.parse(response);
             setData(responseJSON);
         },
