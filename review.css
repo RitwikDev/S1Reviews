@@ -1,0 +1,130 @@
+body
+{
+    background-color: black;
+    color: #ffffff;
+    /* height: 1000vh; */
+}
+
+#rootElement
+{
+    height: 10vh;
+    position: sticky;
+    top: 0;
+}
+
+p
+{
+    font-size: 1.25vw;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.selectDisable
+{
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.center
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.positionSticky
+{
+    position: sticky;
+    margin-left: auto;
+    margin-right: auto;
+    top: 10vh;
+    width: 90vw;
+    height: 50.625vw;    /* [width*(9/16)] */
+}
+
+.carousel-caption
+{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.display-2
+{
+    font-size: 8vw;
+}
+
+.imageContainer
+{
+    position: relative;
+    left: 0;
+    right: 0;
+    height: 360vw;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.textContainer
+{
+    position: relative;
+    margin-top: 5vh;
+    margin-bottom: 20vh;
+}
+
+.textContainer h1
+{
+    font-size: 3vw;
+    color: chartreuse;
+}
+
+.textContainer .sectionHeadingCol
+{
+    border-style: none none solid none;
+    border-color: chartreuse;
+}
+
+.setPageTopText
+{
+    position: fixed;
+    font-size: 1.4vw;
+    z-index: 1;
+    animation-name: setPageTopTextAnimation;
+    animation-duration: 2s;
+    left: 0;
+    opacity: 1;
+}
+
+.removePageTopText
+{
+    position: fixed;
+    font-size: 1.4vw;
+    animation-name: removePageTopTextAnimation;
+    animation-duration: 1s;
+    opacity: 0;
+    left: 0;
+    display: none;
+    z-index: -1;
+}
+
+@keyframes setPageTopTextAnimation
+{
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes removePageTopTextAnimation
+{
+    from {opacity: 1; z-index: 1;}
+    to {opacity: 0; z-index: -1;}
+}
+
+.jumbotron
+{
+    background-color: black;
+    color: white;
+    margin-top: 5%;
+}
